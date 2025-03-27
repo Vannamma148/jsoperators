@@ -1,0 +1,51 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+     
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .box {
+        background-color: rgb(255, 191, 15);
+        padding: 1.2rem;
+        margin: 1rem;
+        height: 130px;
+        width: 200px;
+        justify-items: center;
+        align-content: center;
+        border-radius: 22px;
+        color: white;
+        cursor: pointer;
+      }
+      .box h4 {
+        font-weight: 800;
+      }
+
+      button {
+        background-color: white;
+        padding: 8px;
+        border: none;
+        margin: 12px 0;
+        border-radius: 18px;
+        font-size: 0.7rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgb(255, 166, 0);
+          color: rgb(249, 249, 249);
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
